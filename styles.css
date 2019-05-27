@@ -22,12 +22,16 @@ html, body {
 .nav {
     height: 60px;
     background-color: #9D6381;
+    fill: #ffff;
 }
 
 .conteudo {
     flex: 1;
     min-height: 400px;
     
+}
+
+#tela_login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +78,9 @@ input {
 }
 
 .return {
-    display: flex;
-    justify-content: start;
-    align-content: center;
+    padding: 10px 10px;
+}
+
+.return path {
+    fill: #ffff;
 }
