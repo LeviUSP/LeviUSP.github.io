@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Avaliação de Funcionários</title>
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         
 </head>
 <body>
@@ -13,8 +14,51 @@
             <div class="nav">
                 <img src="./images/round-keyboard_backspace-24px.svg" alt="return" class="return">   
             </div>
-            <div class="conteudo">
-                <a>Nome</a>
+            <div class="conteudo" id="tela_de_avaliacoes">
+                <div class="nomeado"><a class="nome">Nome</a></div>
+                
+                <script type="text/javascript" src="tabScript.js"></script>
+                <div class="TabControl">
+                    
+                    <div id="header">
+                        <ul class="abas">
+                            <li>
+                                <div class="aba">
+                                    <span>Tab 1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba">
+                                    <span>Tab 2</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba">
+                                    <span>Tab 3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba">
+                                    <span>Tab 4</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content">
+                        <div class="tab_content">
+                            Conteúdo da aba 1
+                        </div>
+                        <div class="tab_content">
+                            Conteúdo da aba 2
+                        </div>
+                        <div class="tab_content">
+                            Conteúdo da aba 3
+                        </div>
+                        <div class="tab_content">
+                            Conteúdo da aba 4
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
