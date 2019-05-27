@@ -94,7 +94,6 @@ input {
 
     padding-top: 10px; 
 
-    border: solid 1px;
 }
 
 .nome {
@@ -102,7 +101,7 @@ input {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 56px;
+    line-height: 30px;
     text-align: center;
 
     color: #1C0303;
@@ -111,8 +110,7 @@ input {
 .TabControl{ 
     width:100%; 
     overflow:hidden; 
-    height:400px;
-    border: solid 1px;
+    height:100%;
 }
 .TabControl #header{ 
     width:100%; 
