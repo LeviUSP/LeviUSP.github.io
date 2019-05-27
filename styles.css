@@ -64,6 +64,10 @@ input {
     max-width: 129px;
 }
 
+.butao:hover {
+    background-color: #CAD9E9;
+} 
+
 .user {
     height: 100px;
     width: 100px;
