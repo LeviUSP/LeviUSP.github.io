@@ -93,6 +93,8 @@ input {
     height: 20px;
 
     padding-top: 10px; 
+
+    border: solid 1px;
 }
 
 .nome {
@@ -109,7 +111,8 @@ input {
 .TabControl{ 
     width:100%; 
     overflow:hidden; 
-    height:400px
+    height:400px;
+    border: solid 1px;
 }
 .TabControl #header{ 
     width:100%; 
@@ -127,10 +130,12 @@ input {
     justify-content: space-around;
 }
 .TabControl .abas li{
-    float:left
+    float:left;
+    list-style-type: none;
 }
+
 .aba{
-    width:100px; 
+    width:150px; 
     height:30px; 
     border:solid 1px; 
     border-radius:5px 5px 0 0;
@@ -139,7 +144,7 @@ input {
     background:#3A5FCD
 }
 .ativa{
-    width:100px; 
+    width:150px; 
     height:30px; 
     border:solid 1 px; 
     border-radius:5px 5px 0 0;
@@ -161,7 +166,7 @@ input {
     color:#fff
 }
 .selected{
-    width:100px; 
+    width:150px;
     height:30px; 
     border:solid 1 px; 
     border-radius:5px 5px 0 0;
