@@ -18,9 +18,6 @@ html, body {
     flex-direction: column;
 }
 
-.tela #tela_inicial {
-  
-}
 
 .nav {
     height: 60px;
@@ -34,7 +31,8 @@ html, body {
     display: flex;
 }
 
-.conteudo #tela_login {
+#tela_login {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
