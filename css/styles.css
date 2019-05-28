@@ -34,7 +34,8 @@ html, body {
     display: flex;
 }
 
-.conteudo #tela_login {
+#tela_login {
+    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -80,95 +81,3 @@ input {
     width: 100px;
 }
 
-.return {
-    padding: 10px 10px;
-}
-
-
-.nomeado {
-    display: flex;
-    justify-content: center;
-    
-    width: 100%;
-    height: 20px;
-
-    padding-top: 10px; 
-
-}
-
-.nome {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-
-    color: #1C0303;
-}
-
-.TabControl{ 
-    width:100%; 
-    overflow:hidden; 
-    height:100%;
-}
-.TabControl #header{ 
-    width:100%; 
-    overflow:hidden; 
-    cursor:hand
-}
-.TabControl #content{ 
-    width:100%; 
-    border: solid 1px;
-    overflow:hidden; 
-    height:100%; 
-}
-.TabControl .abas{
-    display:flex;
-    justify-content: space-around;
-}
-.TabControl .abas li{
-    float:left;
-    list-style-type: none;
-}
-
-.aba{
-    width:150px; 
-    height:30px; 
-    border:solid 1px; 
-    border-radius:5px 5px 0 0;
-    text-align:center; 
-    padding-top:5px; 
-    background:#3A5FCD
-}
-.ativa{
-    width:150px; 
-    height:30px; 
-    border:solid 1 px; 
-    border-radius:5px 5px 0 0;
-    text-align:center; 
-    padding-top:5px; 
-    background:#27408B;
-}
-.ativa span, .selected span{
-    color:#fff
-}
-.TabControl #content{
-    background:#27408B
-}
-.TabControl .conteudo{
-    width:100%;  
-    background:#27408B; 
-    display:none; 
-    height:100%;
-    color:#fff
-}
-.selected{
-    width:150px;
-    height:30px; 
-    border:solid 1 px; 
-    border-radius:5px 5px 0 0;
-    text-align:center; 
-    padding-top:5px; 
-    background:#27408B
-}
