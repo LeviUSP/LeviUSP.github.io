@@ -18,9 +18,6 @@ html, body {
     flex-direction: column;
 }
 
-.tela #tela_inicial {
-  
-}
 
 .nav {
     height: 60px;
@@ -62,57 +59,65 @@ html, body {
 }
 
 .TabControl{ 
+    position: relative;
+    float: left;
     width:100%; 
     overflow:hidden; 
     height:100%;
 }
-.TabControl #header{ 
+.TabControl #header{
+    float: left;
+
     width:100%; 
     overflow:hidden; 
     cursor:hand;
 }
 .TabControl #content{ 
     width:100%; 
-    border: solid 1px;
     overflow:hidden; 
     height:100%; 
+    margin-bottom: 0%;
 }
 .TabControl .abas{
-    display:flex;
+    
+    display: flex;
     justify-content: space-around;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .TabControl .abas li{
     float:left;
     list-style-type: none;
+    flex-shrink: 0;
 }
 
 .aba{
     width:150px; 
     height:30px; 
-    border:solid 1px; 
+
     border-radius:5px 5px 0 0;
     text-align:center; 
     padding-top:5px; 
-    background:#3A5FCD
+    background:#BFD1E5
 }
 .aba:hover{
     width:150px; 
     height:30px; 
-    border:solid 1 px; 
+    color: #BFC0C1;
     border-radius:5px 5px 0 0;
     text-align:center; 
     padding-top:5px; 
-    background:#27408B;
+    background:#AEBED1;
 }
 .aba:hover span, .selected span{
-    color:#fff
+    color:#40464C
 }
 .TabControl #content{
-    background:#27408B
+    background:#BFD1E5
 }
 .TabControl .conteudo{
     width:100%;  
-    background:#27408B; 
+    background:#BFD1E5; 
     display:none; 
     height:100%;
     color:#fff
@@ -126,5 +131,5 @@ html, body {
     border-color: #000000;
     text-align:center; 
     padding-top:5px; 
-    background:#27408B;
+    background: #9DACBC ;
 }
