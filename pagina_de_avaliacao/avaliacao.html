@@ -7,6 +7,7 @@
         <title>Avaliação de Funcionários</title>
 
         <link rel="stylesheet" href="../css/avaliacao.css">
+        <script src="../js/tabScript.js"></script>
         
 </head>
 <body>
@@ -28,38 +29,39 @@
                         <div id="header">
                             <ul class="abas">
                                 <li>
-                                    <div class="aba" id="selected">
+                                    <div class="aba" id="selected" onclick="openPage()">
                                         <span>Desempenho</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
+                                <div class="aba" id = "aba2" onclick = "openPage2()">
                                         <span>Comportamento</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
+                                    <div class="aba" id = "aba3" onclick="openPage3()">
                                         <span>Conhecimento</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
+                                    <div class="aba" id  = "aba4" onclick="openPage4()">
                                         <span>Relações</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        
                         <div id="content">
-                            <div class="tab_content">
+                            <div id="tab1" class="tab_content">
                                 Conteúdo da aba 1
                             </div>
-                            <div class="tab_content">
+                            <div id="tab2" class="tab_content">
                                 Conteúdo da aba 2
                             </div>
-                            <div class="tab_content">
+                            <div id="tab3" class="tab_content">
                                 Conteúdo da aba 3
                             </div>
-                            <div class="tab_content">
+                            <div id="tab4" class="tab_content">
                                 Conteúdo da aba 4
                             </div>
                         </div>
