@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: #EBF5EE;
+    background-color: #BFD1E5;
 }
 
 .tela {
@@ -41,7 +41,7 @@ html, body {
     justify-content: center;
     
     width: 100%;
-    height: 20px;
+    height: fit-content;
 
     padding-top: 10px; 
 
@@ -166,4 +166,8 @@ html, body {
 
     background-color: #fff;
 
+}
+
+.TabControl, .nomeado {
+  background-color: #EBF5EE;
 }
