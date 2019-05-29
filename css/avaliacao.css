@@ -64,6 +64,7 @@ html, body {
     width:100%; 
     overflow:hidden; 
     height:100%;
+
 }
 .TabControl #header{
     float: left;
@@ -76,7 +77,6 @@ html, body {
     width:100%; 
     overflow:hidden; 
     height:100%; 
-    margin-bottom: 0%;
 }
 .TabControl .abas{
     
@@ -85,6 +85,14 @@ html, body {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+
+@media only screen and (max-width: 610px){
+    .TabControl .abas{
+        justify-content: flex-start;
+    }
+    
+}
+
 .TabControl .abas li{
     float:left;
     list-style-type: none;
@@ -112,7 +120,9 @@ html, body {
 .aba:hover span, .selected span{
     color:#40464C
 }
+
 .TabControl #content{
+    height: 100%;
     background:#BFD1E5
 }
 .TabControl .conteudo{
@@ -132,4 +142,17 @@ html, body {
     text-align:center; 
     padding-top:5px; 
     background: #9DACBC ;
+}
+
+.titulo {
+
+}
+
+.sub_criterio {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.avaliacao_escrita {
+    width: 70%;
+    margin-left: 30px;
 }
