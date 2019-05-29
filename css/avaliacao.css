@@ -77,6 +77,7 @@ html, body {
     width:100%; 
     overflow:hidden; 
     height:100%; 
+    padding-bottom: 1px;
 }
 .TabControl .abas{
     
@@ -106,7 +107,7 @@ html, body {
     border-radius:5px 5px 0 0;
     text-align:center; 
     padding-top:5px; 
-    background:#BFD1E5
+    background:#9DACBC
 }
 .aba:hover{
     width:150px; 
@@ -141,7 +142,7 @@ html, body {
     border-color: #000000;
     text-align:center; 
     padding-top:5px; 
-    background: #9DACBC ;
+    background: #BFD1E5 ;
 }
 
 .titulo {
@@ -149,10 +150,20 @@ html, body {
 }
 
 .sub_criterio {
-    padding-top: 20px;
-    padding-left: 30px;
+    display: block;
+    padding: 20px 10px 10px 30px;
+    border-bottom: solid 1px;
 }
 .avaliacao_escrita {
     width: 70%;
+    height: 60px;
+    
+    padding-left: 10px;
+    padding-top: 5px;
+    
     margin-left: 30px;
+    margin-top: 10px;
+
+    background-color: #fff;
+
 }
