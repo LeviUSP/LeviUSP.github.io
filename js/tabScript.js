@@ -32,3 +32,7 @@ function abaClicada (elem){
   document.getElementById(idDoConteudoAtual).style.display = "block";
 
 }
+
+function complete(elem){
+
+}
