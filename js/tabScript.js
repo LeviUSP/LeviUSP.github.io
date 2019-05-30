@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-function abrepaginanaabacerta(esteElemento){
-  var idDaAba = "aba" + esteElemento.numeroDeID;
+function abrePaginaNaAbaCerta(esteElemento){
+  var idDaAba = "aba" + esteElemento.id;
   // vai pra pagina "avaliaçao"
   document.getElementById(idDaAba).classList.add("selected"); 
 

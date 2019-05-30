@@ -69,6 +69,10 @@ input {
     max-width: 129px;
 }
 
+.butao #botaoMsm {
+    width: 100%;
+}
+
 .butao:hover {
     background-color: #CAD9E9;
 } 
