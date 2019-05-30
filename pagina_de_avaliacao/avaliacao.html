@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="../css/avaliacao.css">
         
+        
 </head>
 <body>
         <div class="tela">
@@ -22,44 +23,86 @@
                 </div>
 
                 
-                <div style="display:block; position: relative; top: 20px;">
+                <div style="display:block; position: relative;">
                     <div style="display: block" class="TabControl">
                         
                         <div id="header">
                             <ul class="abas">
                                 <li>
-                                    <div class="aba" id="selected">
+                                    <div class="aba" id="aba1" onclick="abaClicada(this)">
                                         <span>Desempenho</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
+                                    <div class="aba" id="aba2" onclick = "abaClicada(this)">
                                         <span>Comportamento</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
-                                        <span>Conhecimento</span>
+                                    <div class="aba" id="aba3" onclick="abaClicada(this)">
+                                        <span>Entrega de Projetos</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="aba">
+                                    <div class="aba" id="aba4" onclick="abaClicada(this)">
                                         <span>Relações</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        
                         <div id="content">
-                            <div class="tab_content">
-                                Conteúdo da aba 1
+                            <div id="conteudo_aba1" class="tab_content">
+                                <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Eficiência</h3>
+                                    </div>
+                                        <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="sub_criterio">
+                                        <div class="titulo">
+                                            <h3>Eficácia</h3>
+                                        </div>
+                                            <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Busca por Conhecimento</h3>
+                                    </div>
+                                        <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Busca por Conhecimento</h3>
+                                    </div>
+                                        <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Presença</h3>
+                                    </div>
+                                        <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Pontualidade</h3>
+                                    </div>
+                                        <div contenteditable="true" class="avaliacao_escrita" type="text"></div>
+                                </div>
+                                <div class="finalizacao">
+                                    <button class="butao"> Finalizar </button>
+                                </div>
+
                             </div>
-                            <div class="tab_content">
+
+                            </div>
+                            <div id="conteudo_aba2" class="tab_content">
                                 Conteúdo da aba 2
                             </div>
-                            <div class="tab_content">
+                            <div id="conteudo_aba3" class="tab_content">
                                 Conteúdo da aba 3
                             </div>
-                            <div class="tab_content">
+                            <div id="conteudo_aba4" class="tab_content">
                                 Conteúdo da aba 4
                             </div>
                         </div>
@@ -68,5 +111,6 @@
             </div>
             
         </div>
+        <script src="../js/tabScript.js"></script>
 </body>
 </html>

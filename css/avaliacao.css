@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: #EBF5EE;
+    background-color: #BFD1E5;
 }
 
 .tela {
@@ -18,9 +18,6 @@ html, body {
     flex-direction: column;
 }
 
-.tela #tela_inicial {
-  
-}
 
 .nav {
     height: 60px;
@@ -44,7 +41,7 @@ html, body {
     justify-content: center;
     
     width: 100%;
-    height: 20px;
+    height: fit-content;
 
     padding-top: 10px; 
 
@@ -62,62 +59,82 @@ html, body {
 }
 
 .TabControl{ 
+    position: relative;
+    float: left;
     width:100%; 
     overflow:hidden; 
     height:100%;
+    padding-top: 15px;
+
 }
-.TabControl #header{ 
+.TabControl #header{
+    float: left;
+
     width:100%; 
     overflow:hidden; 
     cursor:hand;
 }
 .TabControl #content{ 
     width:100%; 
-    border: solid 1px;
     overflow:hidden; 
     height:100%; 
+    padding-bottom: 1px;
 }
 .TabControl .abas{
-    display:flex;
+    
+    display: flex;
     justify-content: space-around;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
+
+@media only screen and (max-width: 610px){
+    .TabControl .abas{
+        justify-content: flex-start;
+    }
+    
+}
+
 .TabControl .abas li{
     float:left;
     list-style-type: none;
+    flex-shrink: 0;
 }
 
 .aba{
     width:150px; 
     height:30px; 
-    border:solid 1px; 
+
     border-radius:5px 5px 0 0;
     text-align:center; 
     padding-top:5px; 
-    background:#3A5FCD
+    background:#9DACBC
 }
 .aba:hover{
     width:150px; 
     height:30px; 
-    border:solid 1 px; 
+    color: #BFC0C1;
     border-radius:5px 5px 0 0;
     text-align:center; 
     padding-top:5px; 
-    background:#27408B;
+    background:#AEBED1;
 }
 .aba:hover span, .selected span{
-    color:#fff
+    color:#40464C
 }
+
 .TabControl #content{
-    background:#27408B
+    height: 100%;
+    background:#BFD1E5
 }
 .TabControl .conteudo{
     width:100%;  
-    background:#27408B; 
+    background:#BFD1E5; 
     display:none; 
     height:100%;
     color:#fff
 }
-#selected{
+.selected{
     color: #fff;
     width:150px;
     height:30px; 
@@ -126,5 +143,52 @@ html, body {
     border-color: #000000;
     text-align:center; 
     padding-top:5px; 
-    background:#27408B
+    background: #BFD1E5 ;
+}
+
+.sub_criterio {
+    display: block;
+    padding: 20px 10px 10px 30px;
+    border-bottom: solid 1px;
+    border-color: #40464C;
+}
+.avaliacao_escrita {
+    width: 70%;
+    height: 60px;
+    
+    padding-left: 10px;
+    padding-top: 5px;
+    
+    margin-left: 30px;
+    margin-top: 10px;
+
+    background-color: #fff;
+
+}
+
+.TabControl, .nomeado {
+  background-color: #EBF5EE;
+}
+
+.butao {
+    background-color: #51FF65;
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    max-width: 129px;
+
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.butao:hover {
+    background-color: #70FF81;
+}
+
+.finalizacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
 }

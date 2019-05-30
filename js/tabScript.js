@@ -1,16 +1,34 @@
-$(document).ready(function(){
-    $("#content div:nth-child(1)").show();
-    $(".abas li:first div").addClass("selected");       
-    $(".aba").click(function(){
-        $(".aba").removeClass("selected");
-        $(this).addClass("selected");
-        var indice = $(this).parent().index();
-        indice++;
-        $("#content div").hide();
-        $("#content div:nth-child("+indice+")").show();
-    });      
-    $(".aba").hover(
-        function(){$(this).addClass("ativa")},
-        function(){$(this).removeClass("ativa")}
-    );              
+document.addEventListener("DOMContentLoaded", function(event) {
+	abaInicial = localStorage.getItem('abaInicial')
+  
+  	document.getElementById(abaInicial).classList.add("selected");
+   
+	var conteudos = document.getElementsByClassName("tab_content");
+	
+	for (i = 0; i < conteudos.length; i++){
+		conteudos[i].style.display = "none";
+	}
+
+	document.getElementById("conteudo_" + abaInicial).style.display = "block";
+	
 });
+
+
+
+function abrePaginaNaAbaCerta(esteElemento){
+  localStorage.setItem('abaInicial', "aba" + esteElemento);
+
+}
+
+function abaClicada (elem){
+  var abaAnterior = document.getElementsByClassName("selected")[0];
+  if(abaAnterior != null) abaAnterior.classList.remove("selected");
+  elem.classList.add("selected");
+
+  var idDoConteudoAnterior = "conteudo_" + abaAnterior.id;
+  document.getElementById(idDoConteudoAnterior).style.display = "none";
+
+  var idDoConteudoAtual = "conteudo_" + elem.id;
+  document.getElementById(idDoConteudoAtual).style.display = "block";
+
+}
