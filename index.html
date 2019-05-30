@@ -7,21 +7,19 @@
         <title>Avaliação de Funcionários</title>
 
         <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/tabScript.js"></script>
 
 </head>
 <body>
         <div class="tela" id="tela_inicial">
                 <div class="nav"></div>
                 <div class="conteudo" id="tela_login">
-                        <form class="login-form">
+                        <form class="login-form" action="./pagina_de_avaliacao/avaliacao.html">
                                 <img src="./images/account.svg" alt="user image" class="user">
                                 <input placeholder="Insira seu email">
                                 <input placeholder="Insira sua senha" type="password">
-                                <a href="./pagina_de_avaliacao/avaliacao.html" class="butao">
-									<button class="butao" id="botaoMsm" >Entrar</button>
-                                </a>
+                                <button class="butao" id="botaoMsm" onclick="abrePaginaNaAbaCerta(1)">Entrar</button>                             
                         </form>
-                        <script src="./js/tabScript.js"></script>
                 </div>
                 <footer></footer>
         </div>
