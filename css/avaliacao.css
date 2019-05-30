@@ -64,6 +64,7 @@ html, body {
     width:100%; 
     overflow:hidden; 
     height:100%;
+    padding-top: 15px;
 
 }
 .TabControl #header{
@@ -145,14 +146,11 @@ html, body {
     background: #BFD1E5 ;
 }
 
-.titulo {
-
-}
-
 .sub_criterio {
     display: block;
     padding: 20px 10px 10px 30px;
     border-bottom: solid 1px;
+    border-color: #40464C;
 }
 .avaliacao_escrita {
     width: 70%;
@@ -170,4 +168,27 @@ html, body {
 
 .TabControl, .nomeado {
   background-color: #EBF5EE;
+}
+
+.butao {
+    background-color: #51FF65;
+    margin-top: 20px;
+    height: 30px;
+    width: 30%;
+    max-width: 129px;
+
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.butao:hover {
+    background-color: #70FF81;
+}
+
+.finalizacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
 }
