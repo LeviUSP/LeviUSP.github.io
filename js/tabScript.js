@@ -1,5 +1,7 @@
+var abaInicial = "aba1";
+
 document.addEventListener("DOMContentLoaded", function(event) {
-   document.getElementById("aba1").classList.add("selected");
+   document.getElementById(abaInicial).classList.add("selected");
    
    var conteudos = document.getElementsByClassName("tab_content");
    
@@ -7,18 +9,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	   conteudos[i].style.display = "none";
    }
 
-   document.getElementById("conteudo_aba1").style.display = "block";
+   document.getElementById("conteudo_" + abaInicial).style.display = "block";
    
 });
 
 
 
 function abrePaginaNaAbaCerta(esteElemento){
-  var idDaAba = "aba" + esteElemento.id;
-  // vai pra pagina "avaliaçao"
-  document.getElementById(idDaAba).classList.add("selected"); 
+  abaInicial = "aba" + esteElemento.id;
+  // // vai pra pagina "avaliaçao"
+  // document.getElementById(idDaAba).classList.add("selected"); 
 
-  document.getElementById("conteudo_"+idDaAba).style.display = "block";
+  // document.getElementById("conteudo_"+idDaAba).style.display = "block";
 
 }
 
