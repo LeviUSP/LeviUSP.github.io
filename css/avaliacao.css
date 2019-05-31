@@ -64,7 +64,6 @@ html, body {
     width:100%; 
     overflow:hidden; 
     height:100%;
-
 }
 .TabControl #header{
     float: left;
@@ -152,21 +151,30 @@ html, body {
     border-color: #40464C;
 }
 .avaliacao_escrita {
-    width: 70%;
-    height: 60px;
+    width: 85%;
+    height: 90px;
     
     padding-left: 10px;
     padding-top: 5px;
     
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 
     background-color: #fff;
-
+}
+.motivo {
+    margin-left: 30px;
+    margin-top: 5px;
 }
 
 .TabControl, .nomeado {
   background-color: #EBF5EE;
+}
+
+.titulo {
+    margin-bottom: 10px;
+
 }
 
 .butao {
@@ -191,3 +199,8 @@ html, body {
     align-content: center;
     height: 60px;
 }
+
+.complete {
+    background: #8B99A7;
+}
+
