@@ -100,21 +100,19 @@ html, body {
 }
 
 .aba{
-    width:150px; 
+    width:180px; 
     height:30px; 
 
     border-radius:5px 5px 0 0;
     text-align:center; 
-    padding-top:5px; 
     background:#9DACBC
 }
 .aba:hover{
-    width:150px; 
+    width:180px; 
     height:30px; 
     color: #BFC0C1;
     border-radius:5px 5px 0 0;
     text-align:center; 
-    padding-top:5px; 
     background:#AEBED1;
 }
 .aba:hover span, .selected span{
@@ -134,13 +132,12 @@ html, body {
 }
 .selected{
     color: #fff;
-    width:150px;
+    width:180px;
     height:30px; 
     border:solid 1 px; 
     border-radius:5px 5px 0 0;
     border-color: #000000;
     text-align:center; 
-    padding-top:5px; 
     background: #BFD1E5 ;
 }
 
