@@ -49,15 +49,29 @@ function complete(intAbaAtual){
 
 function putRightMarkOnDiv(abaAtual){
 	//se já tiver imagem, return
+	if(jaEstaFinalizada(abaAtual)){return}
+	
 
+
+	//cria uma nova imagem
 	var img = document.createElement("img");
 	img.src = "../images/round-done-24px.svg";
+	img.className="checked";
 	abaAtual.appendChild(img); 
 }
 
+function jaEstaFinalizada(abaAtual){
+	var checkedTabs = document.getElementsByClassName("checked");
+	var i;
+	for(i = 0; i < checkedTabs.length; i++){
+		if(checkedTabs[i].parentNode === abaAtual)
+			return true;
+	}
+	return false;
+}
+
 function popupFinalization(){
-	createCustomAlert("Deu certo!");
-	
+	createCustomAlert("Deu certo!");	
 }
 
 
