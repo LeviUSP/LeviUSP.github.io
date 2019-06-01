@@ -36,6 +36,8 @@ function complete(intAbaAtual){
 	var abaAtual = document.getElementById("aba" + intAbaAtual);
 	var conteudoDaAbaAtual = document.getElementById("conteudo_" + abaAtual);
 
+	//pop-up de finalização com sucesso
+	popupFinalization(abaAtual);
 	//coloca um certo na aba que foi finalizada
 	putRightMarkOnDiv(abaAtual);
 
@@ -43,16 +45,14 @@ function complete(intAbaAtual){
 
 	//armazenar os subcriterios em um localstorage
 
-	//pop-up de finalização com sucesso
-	popupFinalization();
+	
+	
 }
 
 function putRightMarkOnDiv(abaAtual){
-	//se já tiver imagem, return
-	if(jaEstaFinalizada(abaAtual)){return}
+	//se já tiver imagem
+	if(abaJaFinalizada(abaAtual)){return}
 	
-
-
 	//cria uma nova imagem
 	var img = document.createElement("img");
 	img.src = "../images/round-done-24px.svg";
@@ -60,7 +60,7 @@ function putRightMarkOnDiv(abaAtual){
 	abaAtual.appendChild(img); 
 }
 
-function jaEstaFinalizada(abaAtual){
+function abaJaFinalizada(abaAtual){
 	var checkedTabs = document.getElementsByClassName("checked");
 	var i;
 	for(i = 0; i < checkedTabs.length; i++){
@@ -70,8 +70,11 @@ function jaEstaFinalizada(abaAtual){
 	return false;
 }
 
-function popupFinalization(){
-	createCustomAlert("Deu certo!");	
+function popupFinalization(abaAtual){
+	if(abaJaFinalizada(abaAtual))
+		createCustomAlert("Avaliação atualizada com sucesso!");
+	else
+		createCustomAlert("Avaliação armazenada com sucesso!");	
 }
 
 
