@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-function abrePaginaNaAbaCerta(esteElemento){
-  localStorage.setItem('abaInicial', "aba" + esteElemento);
-
+function abrePaginaNaAbaCerta(intElemento){
+  localStorage.setItem('abaInicial', "aba" + intElemento);
 }
 
 function abaClicada (elem){
