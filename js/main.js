@@ -49,9 +49,9 @@ function complete(intAbaAtual){
 	
 }
 
-function putRightMarkOnDiv(abaAtual){
+function putRightMarkOnDiv(aba){
 	//se já tiver imagem
-	if(abaJaFinalizada(abaAtual)){return}
+	if(abaJaFinalizada(aba)){return}
 	
 	//cria uma nova imagem
 	var img = document.createElement("img");
@@ -60,11 +60,11 @@ function putRightMarkOnDiv(abaAtual){
 	abaAtual.appendChild(img); 
 }
 
-function abaJaFinalizada(abaAtual){
+function abaJaFinalizada(aba){
 	var checkedTabs = document.getElementsByClassName("checked");
 	var i;
 	for(i = 0; i < checkedTabs.length; i++){
-		if(checkedTabs[i].parentNode === abaAtual)
+		if(checkedTabs[i].parentNode === aba)
 			return true;
 	}
 	return false;
