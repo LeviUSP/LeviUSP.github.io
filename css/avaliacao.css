@@ -100,7 +100,7 @@ html, body {
 }
 
 .aba{
-    width:150px; 
+    width:180px; 
     height:30px; 
 
     border-radius:5px 5px 0 0;
@@ -109,7 +109,7 @@ html, body {
     background:#9DACBC
 }
 .aba:hover{
-    width:150px; 
+    width:180px; 
     height:30px; 
     color: #BFC0C1;
     border-radius:5px 5px 0 0;
@@ -134,7 +134,7 @@ html, body {
 }
 .selected{
     color: #fff;
-    width:150px;
+    width:180px;
     height:30px; 
     border:solid 1 px; 
     border-radius:5px 5px 0 0;
