@@ -1,3 +1,9 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html{
 	font-family: Roboto;
 	font-style: normal; 
@@ -51,7 +57,4 @@ label.botao{
 	font-family: Roboto;
 	font-size: calc(0.85em + 1vw);
 
-
-
-	
 }
