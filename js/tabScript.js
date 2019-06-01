@@ -38,8 +38,13 @@ function complete(intAbaAtual){
 	img.src = "../images/round-done-24px.svg";
 
 
+
 	var abaAtual = document.getElementById("aba" + intAbaAtual);
+
 	abaAtual.appendChild(img);
 
+
 	//fazer o baguio passar de um form para outro na outra tela
+
+	
 }

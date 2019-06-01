@@ -202,3 +202,40 @@ html, body {
     background: #8B99A7;
 }
 
+
+/* blur for the back screen */
+#dialogoverlay {
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    z-index: 10;
+}
+
+/* alert button */
+.alert {
+    display: none;
+    padding: 20px;
+    background-color: #AEBED1;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* close button to the alert */
+#closebtn {
+    margin-left: 15px;
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn :hover {
+    color: white;
+}
