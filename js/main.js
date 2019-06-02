@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	abaInicial = localStorage.getItem('abaInicial')
   
   	document.getElementById(abaInicial).classList.add("selected");
-   
+
+
 	var conteudos = document.getElementsByClassName("tab_content");
 	
 	for (i = 0; i < conteudos.length; i++){
@@ -10,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	}
 
 	document.getElementById("conteudo_" + abaInicial).style.display = "block";
+
+	putRightMarkOnDiv(document.getElementById("aba4"));
 	
 });
+
 
 
 
@@ -34,19 +38,11 @@ function abaClicada (elem){
 
 function complete(intAbaAtual){
 	var abaAtual = document.getElementById("aba" + intAbaAtual);
-	var conteudoDaAbaAtual = document.getElementById("conteudo_" + abaAtual);
 
 	//pop-up de finalização com sucesso
 	popupFinalization(abaAtual);
 	//coloca um certo na aba que foi finalizada
 	putRightMarkOnDiv(abaAtual);
-
-	//fazer o baguio passar de um form para outro na outra tela
-
-	//armazenar os subcriterios em um localstorage
-
-	
-	
 }
 
 function putRightMarkOnDiv(aba){
@@ -57,7 +53,7 @@ function putRightMarkOnDiv(aba){
 	var img = document.createElement("img");
 	img.src = "../images/round-done-24px.svg";
 	img.className="checked";
-	abaAtual.appendChild(img); 
+	aba.appendChild(img); 
 }
 
 function abaJaFinalizada(aba){
