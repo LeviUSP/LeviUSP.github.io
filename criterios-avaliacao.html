@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link href="criterios.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
-        <script src="./js/tabScript.js"></script>
         <h2>Nome</h2>
     </head>
     <body>
-        <div class = "azul-esq">
+        <button class="relatorio">Gerar Relatorio</button>
+        <div class = "azul-esq esq">
             <h3>Critérios não Avaliados</h3> 
-            <form action="./pagina_de_avaliacao/avaliacao.html">
-                <button onclick="abrePaginaNaAbaCerta(1)" class="criterios">Desempenho</button>
-                <button onclick="abrePaginaNaAbaCerta(2)" class="criterios">Comportamento</button>
-                <button onclick="abrePaginaNaAbaCerta(3)" class="criterios">Conhecimento</button>
-            </form>
+            <forms>
+                <button class="criterios">Desempenho</button>
+                <button class="criterios">Comportamento</button>
+                <button class="criterios">Conhecimento</button>
+            </forms>
         </div>
-        <div class = "azul-dir">
-            <h3>Critérios Avaliados</h3>
-            <form action="./pagina_de_avaliacao/avaliacao.html">
-                <button onclick="abrePaginaNaAbaCerta(4)" class="criterios">Relações</button>
-            </form>
+        <div class = "azul-dir dir">
+                <h3>Critérios Avaliados</h3>
+                <button class="criterios botao">Relações</button>
         </div>
 
     </body>
