@@ -18,11 +18,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-
-function abrePaginaNaAbaCerta(intElemento){
-  localStorage.setItem('abaInicial', "aba" + intElemento);
-}
-
 function abaClicada (elem){
   var abaAnterior = document.getElementsByClassName("selected")[0];
   if(abaAnterior != null) abaAnterior.classList.remove("selected");
