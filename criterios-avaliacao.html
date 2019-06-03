@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link href="criterios.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
-        
-       
+      
         <h2 id="nome">Nome</h2>
+
     </head>
     <body>
-        <div class = "azul-esq">
+        <button class="relatorio">Gerar Relatorio</button>
+        <div class = "azul-esq esq">
             <h3>Critérios não Avaliados</h3> 
+
             <form id="nao-avaliados" action="./pagina_de_avaliacao/sub-criterios-joao.html">
                 <button id="criterio-1-naoavaliado" onclick="abrePaginaNaAbaCerta(1)" class="criterios">Desempenho</button>
                 <button id="criterio-2-naoavaliado" onclick="abrePaginaNaAbaCerta(2)" class="criterios">Comportamento</button>
@@ -26,6 +29,7 @@
                 <button style="display:none" id="criterio-3-avaliado" onclick="abrePaginaNaAbaCerta(3)" class="criterios">Conhecimento</button>
                 <button id="criterio-4-avaliado" onclick="abrePaginaNaAbaCerta(4)" class="criterios">Relações</button>
             </form>
+
         </div>
         <script src="./js/criterios.js"></script>
     </body>
