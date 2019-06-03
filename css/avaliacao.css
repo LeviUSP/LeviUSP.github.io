@@ -161,6 +161,7 @@ html, body {
     margin-bottom: 10px;
 
     background-color: #fff;
+    font-family:'Roboto', sans-serif;
 }
 .motivo {
     margin-left: 30px;
@@ -265,3 +266,4 @@ html, body {
 #alertBox #closeBtn :hover {
     background-color: rgb(116, 66, 78);
 }
+
