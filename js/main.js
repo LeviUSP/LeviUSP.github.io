@@ -38,6 +38,8 @@ function complete(intAbaAtual){
 	popupFinalization(abaAtual);
 	//coloca um certo na aba que foi finalizada
 	putRightMarkOnDiv(abaAtual);
+
+	localStorage.setItem("" + intAbaAtual, "criterio-" + intAbaAtual);
 }
 
 function putRightMarkOnDiv(aba){
