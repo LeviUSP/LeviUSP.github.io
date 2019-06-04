@@ -35,3 +35,15 @@
 	border-radius: 10px;
 	background: #EBF5EE;
 }
+
+.botao2{
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	width: 27px;
+	height: 27px;
+	border-radius: 10px;
+	background: white;
+}
+
+
