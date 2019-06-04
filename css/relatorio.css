@@ -1,0 +1,37 @@
+.titulo{
+	position: absolute;
+	font-family: Roboto;
+	font-style: bold;
+	left: 32%;
+	top: 15%;
+
+
+}
+
+
+.aba1{
+	position: absolute;
+	font-family: Roboto;
+	top:35%;
+	border-style: solid;
+	border-color: #EBF5EE;
+	width: 80%;
+	left: 10%;
+
+}
+
+
+.sub{
+	font-weight: bold;
+
+}
+
+.botao{
+	position: absolute;
+	left: 45%;
+	top: 5%;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background: #EBF5EE;
+}

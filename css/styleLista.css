@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -54,9 +55,6 @@ img.btnBusca{
 
 label.botao{
 	font-family: Roboto;
-	font-size: calc(0.55em + 1vw);
+	font-size: calc(0.85em + 1vw);
 
-
-
-	
 }
