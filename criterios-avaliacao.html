@@ -5,22 +5,32 @@
         <meta charset="UTF-8">
         <link href="criterios.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
-        <h2>Nome</h2>
+      
+        <h2 id="nome">Nome</h2>
+
     </head>
     <body>
         <button class="relatorio">Gerar Relatorio</button>
         <div class = "azul-esq esq">
             <h3>Critérios não Avaliados</h3> 
-            <forms>
-                <button class="criterios">Desempenho</button>
-                <button class="criterios">Comportamento</button>
-                <button class="criterios">Conhecimento</button>
-            </forms>
-        </div>
-        <div class = "azul-dir dir">
-                <h3>Critérios Avaliados</h3>
-                <button class="criterios botao">Relações</button>
-        </div>
 
+            <form id="nao-avaliados" action="./pagina_de_avaliacao/sub-criterios-joao.html">
+                <button id="criterio-1-naoavaliado" onclick="abrePaginaNaAbaCerta(1)" class="criterios">Desempenho</button>
+                <button id="criterio-2-naoavaliado" onclick="abrePaginaNaAbaCerta(2)" class="criterios">Comportamento</button>
+                <button id="criterio-3-naoavaliado" onclick="abrePaginaNaAbaCerta(3)" class="criterios">Conhecimento</button>
+                <button style="display:none" id="criterio-4-naoavaliado" onclick="abrePaginaNaAbaCerta(4)" class="criterios">Relações</button>
+            </form>
+        </div>
+        <div class = "azul-dir">
+            <h3>Critérios Avaliados</h3>
+            <form id="avaliados" action="./pagina_de_avaliacao/sub-criterios-joao.html">
+                <button style="display:none" id="criterio-1-avaliado" onclick="abrePaginaNaAbaCerta(1)" class="criterios">Desempenho</button>
+                <button style="display:none" id="criterio-2-avaliado" onclick="abrePaginaNaAbaCerta(2)" class="criterios">Comportamento</button>
+                <button style="display:none" id="criterio-3-avaliado" onclick="abrePaginaNaAbaCerta(3)" class="criterios">Conhecimento</button>
+                <button id="criterio-4-avaliado" onclick="abrePaginaNaAbaCerta(4)" class="criterios">Relações</button>
+            </form>
+
+        </div>
+        <script src="./js/criterios.js"></script>
     </body>
 </html>

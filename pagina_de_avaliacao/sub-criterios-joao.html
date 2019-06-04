@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Avaliação de Funcionários</title>
+
+        <link rel="stylesheet" href="../css/avaliacao.css">
+        <link rel="stylesheet" href="../css/starability-basic.css">
+        
+        
+</head>
+<body>
+    <div class="tela">
+        <div style="display:block" class="nav">
+            <a href="criterios-avaliacao-joao.html">
+                <img src="../images/round-keyboard_backspace-24px.svg" alt="return" class="return">   
+            </a>
+        </div>
+        <div class="conteudo" style="display:block" id="tela_de_avaliacoes">
+            <div style="display:block">
+                <div class="nomeado">
+                    <a class="nome">João Silveira</a>
+                </div>
+            </div>
+
+            
+            <div style="display:block; position: relative;">
+                <div style="display: block" class="TabControl">
+                    
+                    <div id="header">
+                        <ul class="abas">
+                            <li>
+                                <div class="aba" id="aba1" onclick="abaClicada(this)">
+                                    <span>Desempenho</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba" id="aba2" onclick = "abaClicada(this)">
+                                    <span>Comportamento</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba" id="aba3" onclick="abaClicada(this)">
+                                    <span>Entrega de Projetos</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba" id="aba4" onclick="abaClicada(this)">
+                                    <span>Relações</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="content">
+                        <div id="conteudo_aba1" class="tab_content">
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Eficiência</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        
+                                        <input type="radio" id="rate-eficiencia1" name="rating" value="1" />
+                                        <label for="rate-eficiencia1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-eficiencia2" name="rating" value="2" />
+                                        <label for="rate-eficiencia2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-eficiencia3" name="rating" value="3" />
+                                        <label for="rate-eficiencia3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-eficiencia4" name="rating" value="4" />
+                                        <label for="rate-eficiencia4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-eficiencia5" name="rating" value="5" />
+                                        <label for="rate-eficiencia5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                                <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                    <div class="titulo">
+                                        <h3>Eficácia</h3>
+                                    </div>
+                                    <form>
+                                        <fieldset class="starability-basic">
+                                            <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                            <input type="radio" id="rate-eficacia1" name="rating" value="1" />
+                                            <label for="rate-eficacia1" title="Terrible">1 star</label>
+                                            <input type="radio" id="rate-eficacia2" name="rating" value="2" />
+                                            <label for="rate-eficacia2" title="Not good">2 stars</label>
+                                            <input type="radio" id="rate-eficacia3" name="rating" value="3" />
+                                            <label for="rate-eficacia3" title="Average">3 stars</label>
+                                            <input type="radio" id="rate-eficacia4" name="rating" value="4" />
+                                            <label for="rate-eficacia4" title="Very good">4 stars</label>
+                                            <input type="radio" id="rate-eficacia5" name="rating" value="5" />
+                                            <label for="rate-eficacia5" title="Amazing">5 stars</label>
+                                        </fieldset>
+                                    </form>
+                                    <a class="motivo">Por que?</a><br>
+                                   <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Aplicação do Conhecimento</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-aplicacao1" name="rating" value="1" />
+                                        <label for="rate-aplicacao1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-aplicacao2" name="rating" value="2" />
+                                        <label for="rate-aplicacao2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-aplicacao3" name="rating" value="3" />
+                                        <label for="rate-aplicacao3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-aplicacao4" name="rating" value="4" />
+                                        <label for="rate-aplicacao4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-aplicacao5" name="rating" value="5" />
+                                        <label for="rate-aplicacao5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Busca por Conhecimento</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-busca1" name="rating" value="1" />
+                                        <label for="rate-busca1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-busca2" name="rating" value="2" />
+                                        <label for="rate-busca2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-busca3" name="rating" value="3" />
+                                        <label for="rate-busca3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-busca4" name="rating" value="4" />
+                                        <label for="rate-busca4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-busca5" name="rating" value="5" />
+                                        <label for="rate-busca5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Presença</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-presenca1" name="rating" value="1" />
+                                        <label for="rate-presenca1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-presenca2" name="rating" value="2" />
+                                        <label for="rate-presenca2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-presenca3" name="rating" value="3" />
+                                        <label for="rate-presenca3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-presenca4" name="rating" value="4" />
+                                        <label for="rate-presenca4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-presenca5" name="rating" value="5" />
+                                        <label for="rate-presenca5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Produtividade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-produtividade1" name="rating" value="1" />
+                                        <label for="rate-produtividade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-produtividade2" name="rating" value="2" />
+                                        <label for="rate-produtividade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-produtividade3" name="rating" value="3" />
+                                        <label for="rate-produtividade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-produtividade4" name="rating" value="4" />
+                                        <label for="rate-produtividade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-produtividade5" name="rating" value="5" />
+                                        <label for="rate-produtividade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="finalizacao">
+                                <button onclick="complete(1)" class="butao"> Finalizar </button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="conteudo_aba2" class="tab_content">
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Flexibilidade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-flexibilidade1" name="rating" value="1" />
+                                        <label for="rate-flexibilidade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-flexibilidade2" name="rating" value="2" />
+                                        <label for="rate-flexibilidade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-flexibilidade3" name="rating" value="3" />
+                                        <label for="rate-flexibilidade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-flexibilidade4" name="rating" value="4" />
+                                        <label for="rate-flexibilidade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-flexibilidade5" name="rating" value="5" />
+                                        <label for="rate-flexibilidade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Liderança</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-lideranca1" name="rating" value="1" />
+                                        <label for="rate-lideranca1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-lideranca2" name="rating" value="2" />
+                                        <label for="rate-lideranca2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-lideranca3" name="rating" value="3" />
+                                        <label for="rate-lideranca3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-lideranca4" name="rating" value="4" />
+                                        <label for="rate-lideranca4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-lideranca5" name="rating" value="5" />
+                                        <label for="rate-lideranca5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Proatividade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-proatividade1" name="rating" value="1" />
+                                        <label for="rate-proatividade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-proatividade2" name="rating" value="2" />
+                                        <label for="rate-proatividade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-proatividade3" name="rating" value="3" />
+                                        <label for="rate-proatividade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-proatividade4" name="rating" value="4" />
+                                        <label for="rate-proatividade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-proatividade5" name="rating" value="5" />
+                                        <label for="rate-proatividade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Paciência</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-paciencia1" name="rating" value="1" />
+                                        <label for="rate-paciencia1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-paciencia2" name="rating" value="2" />
+                                        <label for="rate-paciencia2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-paciencia3" name="rating" value="3" />
+                                        <label for="rate-paciencia3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-paciencia4" name="rating" value="4" />
+                                        <label for="rate-paciencia4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-paciencia5" name="rating" value="5" />
+                                        <label for="rate-paciencia5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Pontualidade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-pontualidade1" name="rating" value="1" />
+                                        <label for="rate-pontualidade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-pontualidade2" name="rating" value="2" />
+                                        <label for="rate-pontualidade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-pontualidade3" name="rating" value="3" />
+                                        <label for="rate-pontualidade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-pontualidade4" name="rating" value="4" />
+                                        <label for="rate-pontualidade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-pontualidade5" name="rating" value="5" />
+                                        <label for="rate-pontualidade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Voz Ativa</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-voz_ativa1" name="rating" value="1" />
+                                        <label for="rate-voz_ativa1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-voz_ativa2" name="rating" value="2" />
+                                        <label for="rate-voz_ativa2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-voz_ativa3" name="rating" value="3" />
+                                        <label for="rate-voz_ativa3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-voz_ativa4" name="rating" value="4" />
+                                        <label for="rate-voz_ativa4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-voz_ativa5" name="rating" value="5" />
+                                        <label for="rate-voz_ativa5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+
+                            <div class="finalizacao">
+                                <button onclick="complete(2)" class="butao"> Finalizar </button>
+                            </div>
+                        </div>
+
+                        
+                        <div id="conteudo_aba3" class="tab_content">
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Respeito ao Prazo</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-prazo1" name="rating" value="1" />
+                                        <label for="rate-prazo1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-prazo2" name="rating" value="2" />
+                                        <label for="rate-prazo2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-prazo3" name="rating" value="3" />
+                                        <label for="rate-prazo3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-prazo4" name="rating" value="4" />
+                                        <label for="rate-prazo4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-prazo5" name="rating" value="5" />
+                                        <label for="rate-prazo5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Criatividade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-criatividade1" name="rating" value="1" />
+                                        <label for="rate-criatividade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-criatividade2" name="rating" value="2" />
+                                        <label for="rate-criatividade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-criatividade3" name="rating" value="3" />
+                                        <label for="rate-criatividade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-criatividade4" name="rating" value="4" />
+                                        <label for="rate-criatividade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-criatividade5" name="rating" value="5" />
+                                        <label for="rate-criatividade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Comprometimento</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                                        <input type="radio" id="rate-comprometimento1" name="rating" value="1" />
+                                        <label for="rate-comprometimento1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-comprometimento2" name="rating" value="2" />
+                                        <label for="rate-comprometimento2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-comprometimento3" name="rating" value="3" />
+                                        <label for="rate-comprometimento3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-comprometimento4" name="rating" value="4" />
+                                        <label for="rate-comprometimento4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-comprometimento5" name="rating" value="5" />
+                                        <label for="rate-comprometimento5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   </textarea>
+                            </div>
+            
+                            <div class="finalizacao">
+                                <button onclick="complete(3)" class="butao"> Finalizar </button>
+                            </div>
+                            
+                        </div>
+
+
+
+                        <div id="conteudo_aba4" class="tab_content">
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Solidariedade</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <!-- <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." /> -->
+                                        <input type="radio" id="rate-solidariedade1" name="rating" value="1" />
+                                        <label for="rate-solidariedade1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-solidariedade2" name="rating" value="2" />
+                                        <label for="rate-solidariedade2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-solidariedade3" name="rating" value="3" />
+                                        <label for="rate-solidariedade3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-solidariedade4" name="rating" value="4" />
+                                        <label for="rate-solidariedade4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-solidariedade5" name="rating" value="5" />
+                                        <label for="rate-solidariedade5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   Cumpre com os compromissos que faz em ajudar os outros</textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Relacionamento Interpessoal</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <!-- <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." /> -->
+                                        <input type="radio" id="rate-interpessoal1" name="rating" value="1" />
+                                        <label for="rate-interpessoal1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-interpessoal2" name="rating" value="2" />
+                                        <label for="rate-interpessoal2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-interpessoal3" name="rating" value="3" />
+                                        <label for="rate-interpessoal3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-interpessoal4" name="rating" value="4" />
+                                        <label for="rate-interpessoal4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-interpessoal5" name="rating" value="5" />
+                                        <label for="rate-interpessoal5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                                <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   É uma pessoa extremamente companheira e amiga para os colegas da equipe</textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Relacionamento com Autoridades</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <!-- <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." /> -->
+                                        <input type="radio" id="rate-autoridades1" name="rating" value="1" />
+                                        <label for="rate-autoridades1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-autoridades2" name="rating" value="2" />
+                                        <label for="rate-autoridades2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-autoridades3" name="rating" value="3" />
+                                        <label for="rate-autoridades3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-autoridades4" name="rating" value="4" />
+                                        <label for="rate-autoridades4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-autoridades5" name="rating" value="5" />
+                                        <label for="rate-autoridades5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   Respeita quando uma tarefa é destinada a ela e assume o erro quando necessário</textarea>
+                            </div>
+                            <div class="sub_criterio">
+                                <div class="titulo">
+                                    <h3>Trabalho em Equipe</h3>
+                                </div>
+                                <form>
+                                    <fieldset class="starability-basic">
+                                        <!-- <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." /> -->
+                                        <input type="radio" id="rate-equipe1" name="rating" value="1" />
+                                        <label for="rate-equipe1" title="Terrible">1 star</label>
+                                        <input type="radio" id="rate-equipe2" name="rating" value="2" />
+                                        <label for="rate-equipe2" title="Not good">2 stars</label>
+                                        <input type="radio" id="rate-equipe3" name="rating" value="3" />
+                                        <label for="rate-equipe3" title="Average">3 stars</label>
+                                        <input type="radio" id="rate-equipe4" name="rating" value="4" />
+                                        <label for="rate-equipe4" title="Very good">4 stars</label>
+                                        <input type="radio" id="rate-equipe5" name="rating" value="5" />
+                                        <label for="rate-equipe5" title="Amazing">5 stars</label>
+                                    </fieldset>
+                                </form>
+                                <a class="motivo">Por que?</a><br>
+                               <textarea rows="5" contenteditable="true" class="avaliacao_escrita">   Consegue assumir responsabilidade pela equipe e está sempre querendo ajudar</textarea>
+                            </div>
+
+                            <div class="finalizacao">
+                                <button onclick="complete(4)" class="butao"> Finalizar </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
