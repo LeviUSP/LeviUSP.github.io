@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #EBF5EE;
+}
+
+.tela {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nav  {
+    height: 60px;
+    background-color: #9D6381;
+}
+
+.return {
+    padding: 10px 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+
+.nome {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-relatorio {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    justify-content: flex-end;
+
+}
+
+
+.azul-esq {
+    padding-top: 15px;
+
+    background-color: #BFD1E5;
+ 
+    width: 300px;
+    height: 450px;    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+
+    
+}
+h3{
+    font-style: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26.3pt;
+
+}
+.azul-dir {
+    padding-top: 15px;
+
+    background: #BFD1E5;
+  
+    width: 300px;
+    height: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+   
+}
+button{
+    border: none;
+    background-color:  #BFD1E5;
+    font-family: 'Roboto', sans-serif;;
+    cursor: pointer;
+    font-style: italic;
+    text-align: center;
+}
+.relatorio{
+
+    text-align: left;
+    font-size: 13pt;
+    text-align: center;
+    width: 150px;
+    height: 100%;
+ 
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.criterios{
+
+    font-size: 18pt;
+    line-height: 10vh;
+    width: 100%;
+
+}
+.voltar{
+    font-size: 13pt;
+}
+
+.linha {
+    margin-top: 10vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-flow: row wrap;
+}
+
+
+@media only screen and (max-width: 624px){
+    .azul-dir {
+        margin-top: 20px;
+
+    }
+    
+}
+/* 
+#avaliados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
